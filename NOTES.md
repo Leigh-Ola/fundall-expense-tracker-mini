@@ -1,0 +1,3 @@
+- The Figma designs allow for login with either username or email, but the API only authenticates logins via email
+- Inconsistent use of green (& its variants) in the Figma designs
+- 
