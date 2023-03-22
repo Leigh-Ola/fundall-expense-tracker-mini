@@ -1,3 +1,5 @@
 - The Figma designs allow for login with either username or email, but the API only authenticates logins via email
 - Inconsistent use of green (& its variants) in the Figma designs
+- The data returned by the API is not consistent with what was expected from the GOOGLE DOC documentation file [here](https://docs.google.com/document/d/1EkJDWWDLzp-2TBZjBOan1BIyf-1yk9k974s7LtPeJ1w/edit)
+- - Specifically, the `data` object returned by the API from `/api/v1/base/profile`
 - 

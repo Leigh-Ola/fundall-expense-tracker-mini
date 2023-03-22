@@ -26,12 +26,9 @@
 </template>
 
 <script setup>
-import { state, setPageName } from '~/store/page'
+import { getPageName } from '~/store/page'
 
-const pageName = computed({
-  get: () => state.pageName,
-  set: value => setPageName(value),
-})
+let pageName = ref(getPageName)
 </script>
 
 <style>

@@ -143,7 +143,9 @@ async function submit() {
           let user = response._data.success.user;
           let {access_token: accessToken, ...userData} = user;
           localStorage.setItem('user', JSON.stringify({access_token: accessToken}));
+          console.log(1);
           updateUser(userData)
+          console.log("Going to dashboard...")
           navigateTo('/dashboard')
         }
       },
