@@ -136,15 +136,15 @@ async function submit() {
         showError(true);
       },
       onResponse({ response}) {
-        // When registration is successful, save acces token to localstorage and the remaining data to harlem store
+        // When registration is successful, save acces token to localstorage and the remaining user data to harlem store
+        // then navigate to dashboard
         let isSuccesful = response._data?.success?.status == 'SUCCESS';
         if(isSuccesful) {
           let user = response._data.success.user;
           let {access_token: accessToken, ...userData} = user;
-          console.log({accessToken, userData})
           localStorage.setItem('user', JSON.stringify({access_token: accessToken}));
           updateUser(userData)
-          // save user.access_token
+          navigateTo('/dashboard')
         }
       },
       onResponseError({ response}) {

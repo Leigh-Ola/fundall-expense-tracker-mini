@@ -25,7 +25,7 @@ import {
         }
     });
 });
-export const getUser = getter('getUser', (state: any) => {
+export const user = getter('user', (state: any) => {
     return state;
 });
     
