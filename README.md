@@ -1,6 +1,13 @@
-# Nuxt 3 Minimal Starter
+# Mini Expense Tracker
+### Built with Nuxt 3 
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+___
+## Screenshots
+![Index](./assets/screenshots/production/index.jpeg)
+![Sign Up](./assets/screenshots/production/signup.jpeg)
+![Login](./assets/screenshots/production/login.jpeg)
+![Dashboard](./assets/screenshots/production/dashboard.jpeg)
+___
 
 ## Setup
 
@@ -40,3 +47,5 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+___

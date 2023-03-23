@@ -4,6 +4,7 @@
 - - Specifically, the `data` object returned by the API from `/api/v1/base/profile`
 - The user's profile picture returned in `data.avatar` does not resolve into an image. It is a URL to an image that does not exist 
 - There's no provision in the Figma designs for an input field where the user can provide a link to their profile picture
+- THe avatar upload functionality is not implemented in the API
 
 ___
 #### Test user:
