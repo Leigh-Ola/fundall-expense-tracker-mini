@@ -1,7 +1,7 @@
 <template>
   <div id="layout-parent" class="bg-theme-grayish-base w-screen h-screen flex relative">
     <div id="layout-child" class="bg-white flex relative m-auto flex-col w-full h-full">
-      <nav class="header w-[calc(100% - 200px)] flex justify-between items-center pt-10 px-2 sm:px-20">
+      <nav class="header w-[calc(100% - 200px)] flex items-end justify-between h-20 px-2 sm:px-20">
         <img src="~/assets/img/fundall_logo_with_text.svg" alt="FundAll Logo" class="mr-auto">
         <NuxtLink to="/login" class="login p-[10px] rounded-[10px] font-bold bg-transparent text-center mr-2 h-11 w-[112px]">LOG IN</NuxtLink>
         <NuxtLink to="/signup" class="login p-[10px] rounded-[10px] font-bold bg-theme-green-dark text-center mr-2 h-11 w-[112px]">SIGN UP</NuxtLink>

@@ -12,7 +12,11 @@ import {
     "created_at": "",
     "updated_at": "",
     "token_type": "",
-    "expires_at": ""
+    "expires_at": "",
+    // 
+    "total_balance": "",
+    "income": "",
+    "spent": ""
   }
   
   export const { state, getter, mutation, ...store } = createStore('user', STATE)

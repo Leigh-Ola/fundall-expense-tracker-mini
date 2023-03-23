@@ -20,6 +20,7 @@ const props = defineProps({
 let value = ref(props.default || '');
 let errors = {
     text(v){
+        if(typeof props.validate === 'function') return props.validate(v);
         return v.length > 3 ? null : "Invalid "+props.name
     },
     password(v){

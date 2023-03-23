@@ -16,10 +16,10 @@
         >
           <InputComponent 
             type="email" placeholder="Enter Email" name="Email Address"
-            :default="'jg@user.com'"
             @error="errors.email = $event" 
             @input="values.email = $event" 
             />
+            <!-- :default="'jg@user.com'" -->
           </div>
           <div class="text-xs mt-5" :class="{'text-theme-green': isPasswordValid}">
             Password
@@ -29,10 +29,10 @@
           >
           <InputComponent 
           type="password" placeholder="Enter Password" name="Password"
-          :default="'jGalaxy123'"
-            @error="errors.password = $event" 
-            @input="values.password = $event" 
+          @error="errors.password = $event" 
+          @input="values.password = $event" 
           />
+          <!-- :default="'jGalaxy123'" -->
         </div>
 
         <!-- input error -->

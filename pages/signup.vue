@@ -11,10 +11,10 @@
             >
               <InputComponent 
                 type="text" placeholder="Enter First Name" name="First Name"
-                :default="'Jackson'"
                 @error="errors.firstName = $event" 
                 @input="values.firstName = $event" 
-              />
+                />
+                <!-- :default="'Jackson'" -->
             </div>
           </div>
           <div class="w-5/12">
@@ -26,10 +26,10 @@
             >
               <InputComponent 
                 type="text" placeholder="Enter Last Name" name="Last Name"
-                :default="'Galaxy'"
                 @error="errors.lastName = $event" 
                 @input="values.lastName = $event" 
-              />
+                />
+                <!-- :default="'Galaxy'" -->
             </div>
           </div>
         </div>
@@ -41,10 +41,10 @@
         >
           <InputComponent 
             type="email" placeholder="Enter Email" name="Email Address"
-            :default="'jg@user.com'"
             @error="errors.email = $event" 
             @input="values.email = $event" 
-          />
+            />
+            <!-- :default="'jg@user.com'" -->
         </div>
         <div class="text-xs mt-5" :class="{'text-theme-green': isPasswordValid}">
           Password
@@ -54,10 +54,10 @@
         >
           <InputComponent 
             type="password" placeholder="Enter Password" name="Password"
-            :default="'jGalaxy123'"
             @error="errors.password = $event" 
             @input="values.password = $event" 
-          />
+            />
+            <!-- :default="'jGalaxy123'" -->
         </div>
         <div class="text-xs mt-5" :class="{'text-theme-green': isConfirmPasswordValid}">
           Confirm Password
@@ -68,10 +68,10 @@
           <InputComponent 
             type="password" placeholder="Confirm Password" name="Confirm Password"
             :validate="(v) => v==values.password? null : 'Passwords do not match'"
-            :default="'jGalaxy123'"
             @error="errors.confirmPassword = $event" 
             @input="values.confirmPassword = $event" 
-          />
+            />
+            <!-- :default="'jGalaxy123'" -->
         </div>
 
         <!-- input error -->
