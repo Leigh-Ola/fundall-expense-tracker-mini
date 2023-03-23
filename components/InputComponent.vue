@@ -24,6 +24,7 @@ let errors = {
         return v.length > 3 ? null : "Invalid "+props.name
     },
     password(v){
+        if(typeof props.validate == 'boolean' && !props.validate) return null;
         if(typeof props.validate === 'function') return props.validate(v);
         // check that password is at least 6 characters long
         if(v.length < 6) return props.name+" must be at least 6 characters long";
